@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.kapsayicibir {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url("./img/netflix-1.jpg");
+  color: white;
+  text-align: center;
+}
+
+.sectionOne {
+  padding: 235px 0;
+}
+.sectionOne h1{
+  font-size: 64px;
+  line-height: 80px;
+  font-weight: 700;
+}
+.sectionOne h5{
+  font-size: 20px;
+  line-height: normal;
+  font-weight: 600;
+  padding: 10px 0 0 0;
+}
+.sectionOne p{
+  font-size: 16px;
+  line-height: 24px;
+  padding: 20px 0 0 0 ;
+}
+
+.sectionTwo,
+.sectionThree,
+.sectionFour,
+.sectionFive,
+.footer-tel {
+  margin-top: 100px;
+}
+
+.sectionFive {
+  text-align: center;
+}
+
+.form-container {
+  text-align: center;
+}
+/* ----------------------------------------------------------email başlangıç---------------------------------------------------------- */
+.email-input {
+  padding: 12px 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  width: 550px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.email-input::placeholder {
+  color: #bbb;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.email-input:focus::placeholder {
+  top: 7px;
+  left: 10px;
+  font-size: 10px;
+  color: #bbb;
+  
+}
+
+.email-input:focus {
+  border-color: #fff;
+}
+/* ----------------------------------------------------------start button---------------------------------------------------------- */
+
+.start-button {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.start-button:active {
+  color: #ccc;
+}
+/* ----------------------------------------------------------select-btnDanger--------------------------------------------------------- */
+.selectOne {
+  height: 32px;
+  width: 124px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  margin-right: 7px;
+}
+
+.btn-danger {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #e50913;
+  height: 32px;
+  width: 106px;
+  line-height: 14px;
+}
+/* ----------------------------------------------------------swiper---------------------------------------------------------- */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  
+}
+
+.swiper-slide:hover {
+  transform: scale(1.04);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 24px;
+}
+.swiper-pagination-bullet{
+display: none;
+}
+/* ----------------------------------------------------------card---------------------------------------------------------- */
+.card {
+  color: white;
+  background: linear-gradient(to bottom right, #192045, #200f17);
+  border-radius: 15px;
+}
+
+.card-text {
+  padding-top: 10px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+
+.card-img {
+  width: 71px;
+  height: 71px;
+  margin-left: 75%;
+  margin-bottom: 20px;
+}
+
+
+
+/* ----------------------------------------------------------accordion---------------------------------------------------------- */
+.accordion-button {
+  background-color: #1e1e1e;
+  color: white;
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+  background-color: #333333;
+}
+
+
+.accordion-body {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button .fa-plus {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .fa-plus {
+  transform: rotate(45deg);
+  color: #e60914;
+}
+
+
+/* ----------------------------------------------------------footer---------------------------------------------------------- */
+.footer-row{
+  line-height: 30px;
+}
+.footer-tel, .footer-tel a{
+  margin-bottom: 20px;
+  color: #fff;
+  opacity: 0.7;
+}
+.footer-select{
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+.list-unstyled a {
+  color: #fff;
+  opacity: 0.7;
+}
+/* ----------------------------------------------------------media---------------------------------------------------------- */
+@media (max-width: 992px) {
+  .sectionOne h1 {
+    font-size: 56px;
+    line-height: 60px;
+  }
+
+  .sectionOne h5 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .sectionOne p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .email-input {
+    width: 65%; 
+  }
+}
+@media (max-width: 768px) {
+  .sectionOne h1 {
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .sectionOne h5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sectionOne p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .email-input {
+    width: 69%; 
+  }
+ 
+}
+@media (max-width: 524px) {
+  .sectionOne h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .sectionOne h5 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .sectionOne p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .email-input {
+    width: 62%; 
+  }
+
+}
+@media (max-width: 471px) {
+  .sectionOne h1 {
+    font-size: 33px;
+    line-height: 40px;
+  }
+
+  .sectionOne h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .sectionOne p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .email-input {
+    width: 55%; 
+  }
+  .selectOne{
+    width: 25%;
+    font-size: 12px;
+  }
+ 
+}
+
+
