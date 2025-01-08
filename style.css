@@ -248,6 +248,9 @@ display: none;
     font-size: 14px;
     line-height: 20px;
   }
+  .sectionTwo{
+    display: none;
+  }
   .email-input {
     width: 65%; 
   }
